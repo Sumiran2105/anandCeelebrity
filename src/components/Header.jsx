@@ -38,7 +38,7 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-2 md:space-x-3 group">
             <div className="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-orange-200 overflow-hidden shadow-sm group-hover:shadow-md transition-all duration-300">
               <img
-                src="public/data/founder.jpg"
+                src="data/assets/founder.jpg"
                 alt="Founder"
                 className="w-full h-full object-cover object-top"
               />
@@ -47,7 +47,7 @@ const Header = () => {
             <div className="flex flex-col items-start">
               <div className="flex items-center space-x-2">
                 <img
-                  src="src/assets/Anandhlogo.png"
+                  src="data/assets/Anandhlogo.png"
                   alt="Anand Logo"
                   className="w-8 h-10 md:w-10 md:h-12 object-contain"
                 />

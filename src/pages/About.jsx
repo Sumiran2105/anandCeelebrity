@@ -23,7 +23,7 @@ export default function About() {
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="src/assets/founder.jpg"
+              src="data/assets/founder.jpg"
               alt="Celebrity Service"
               className="rounded-3xl shadow-2xl w-full max-w-md object-cover border-4 border-gray-200"
             />
