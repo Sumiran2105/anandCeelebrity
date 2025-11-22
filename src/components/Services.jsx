@@ -30,54 +30,32 @@ export default function Services() {
             <div
               key={idx}
               className="
-                group p-8 rounded-2xl 
-                bg-white border border-gray-200 
-                shadow-md transition-all duration-300
-                hover:-translate-y-2 hover:shadow-2xl hover:border-transparent
-                relative overflow-hidden
+                p-8 rounded-2xl bg-white 
+                border border-gray-200 shadow-md
+                transition-all duration-300
+                hover:-translate-y-2 hover:shadow-2xl 
               "
             >
-              {/* Glow gradient overlay */}
+              {/* Icon */}
               <div className="
-                absolute inset-0 opacity-0 group-hover:opacity-100 
-                bg-gradient-to-br from-yellow-300 via-yellow-500/70 to-blue-600/60
-                blur-xl transition-all duration-500
-              "></div>
-
-              {/* Gold border on hover */}
-              <div className="
-                absolute inset-0 rounded-2xl border-2 border-transparent
-                group-hover:border-yellow-500 transition-all duration-500
-              "></div>
-
-              {/* Content */}
-              <div className="relative z-10">
-                {/* Icon */}
-                <div className="
-                  text-4xl mb-4 p-4 
-                  rounded-xl inline-flex 
-                  bg-gradient-to-br from-gray-100 to-gray-200 
-                  shadow-inner text-blue-900 
-                  group-hover:text-yellow-600 transition 
-                ">
-                  {s.icon}
-                </div>
-
-                <h4 className="
-                  mt-4 font-bold text-xl 
-                  text-gray-900 group-hover:text-blue-900 transition
-                ">
-                  {s.title}
-                </h4>
-
-                <p className="mt-3 text-gray-600 group-hover:text-gray-700">
-                  {s.desc}
-                </p>
+                text-4xl mb-4 p-4 rounded-xl inline-flex 
+                bg-gradient-to-br from-gray-100 to-gray-200 
+                shadow-inner text-blue-900
+              ">
+                {s.icon}
               </div>
 
+              <h4 className="mt-4 font-bold text-xl text-blue-900">
+                {s.title}
+              </h4>
+
+              <p className="mt-3 text-gray-600">
+                {s.desc}
+              </p>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

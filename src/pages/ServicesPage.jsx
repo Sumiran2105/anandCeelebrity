@@ -94,25 +94,21 @@ export default function Services() {
             <div
               key={index}
               onClick={() => setSelectedService(service)}
-              className="
-                group 
-                p-7 
-                rounded-2xl
-                border 
-                border-gray-200
-                bg-white
-                shadow-md 
-                hover:shadow-2xl
-                transition-all 
-                duration-500
-                hover:-translate-y-2
-                hover:bg-gradient-to-br
-                hover:from-[#0A1A3A]
-                hover:via-[#153E75]
-                hover:to-[#F4A300]
-                cursor-pointer
-              "
-            >
+               className="
+    p-7 
+    rounded-2xl
+    border 
+    border-gray-200
+    bg-white
+    shadow-md 
+    hover:shadow-xl
+    transition-all 
+    duration-300
+    hover:-translate-y-2
+    cursor-pointer
+  "
+>
+            
               <div className="w-14 h-14 rounded-xl bg-blue-50 group-hover:bg-white/20 flex items-center justify-center">
                 {service.icon}
               </div>
