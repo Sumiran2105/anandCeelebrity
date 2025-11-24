@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Instagram, Facebook, Twitter, Youtube } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,23 +18,13 @@ const Footer = () => {
   const openLegalModal = (type) => setActiveModal(type);
   const closeLegalModal = () => setActiveModal(null);
 
-  const SocialIcons = {
-  instagram: (
-    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm4.25 5.25a4.25 4.25 0 1 0 0 8.5 4.25 4.25 0 0 0 0-8.5zm6-1.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/>
-  ),
+ const SocialIcons = [
+  { icon: Instagram, link: "#" },
+  { icon: Facebook, link: "#" },
+  { icon: Twitter, link: "#" },
+  { icon: Youtube, link: "#" },
+  ];
 
-  facebook: (
-    <path d="M13 22V12h3.5l.5-4H13V6.5c0-1.1.3-1.5 1.5-1.5H17V1h-3c-3 0-5 2-5 5v2H7v4h2v10h4z"/>
-  ),
-
-  twitter: (
-    <path d="M22 5.8c-.8.4-1.6.6-2.5.8a4.3 4.3 0 0 0-7.3 3v1A10.6 10.6 0 0 1 3 5.2s-4 9 5 13a11.6 11.6 0 0 1-7 2c9 5 20 0 20-11.5v-.5A7 7 0 0 0 22 5.8z"/>
-  ),
-
-  youtube: (
-    <path d="M10 15l5.2-3L10 9v6zm12-3c0 3-0.3 5-0.8 6a3.2 3.2 0 0 1-2 2c-1.8.5-9.2.5-11 0a3.2 3.2 0 0 1-2-2C6.3 17 6 15 6 12s0.3-5 0.8-6a3.2 3.2 0 0 1 2-2c1.8-.5 9.2-.5 11 0a3.2 3.2 0 0 1 2 2c0.5 1 0.8 3 0.8 6z"/>
-  ),
-};
 
 
   const legalContent = {
@@ -67,7 +58,7 @@ const Footer = () => {
                   <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-orange-300">
                     <img src="/data/assets/founder.jpg" alt="Founder" />
                   </div>
-                  <img src="/data/assets/Anandhlogo.png" className="w-14 h-14" alt="Logo" />
+                  <img src="/data/assets/Anandhlogo.png" className="w-12 h-14" alt="Logo" />
                 </div>
 
                 <h2 className="text-2xl font-bold">
@@ -107,18 +98,48 @@ const Footer = () => {
               </div>
 
               {/* SOCIAL ICONS */}
-  <div className="flex gap-3">
-  {Object.keys(SocialIcons).map((icon) => (
-    <div
-      key={icon}
-      className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-orange-500 transition text-white"
+<div className="flex gap-3">
+  {SocialIcons.map((item, i) => (
+    <a
+      key={i}
+      href={item.link}
+      className="
+        flex items-center justify-center
+        rounded-xl 
+        text-white
+        transition-all duration-300 ease-out
+        hover:bg-gradient-to-br hover:from-yellow-400 hover:to-yellow-600
+        hover:text-white hover:shadow-[0_4px_15px_rgba(255,200,0,0.4)]
+        
+        /* 📱 Mobile */
+        w-10 h-10 bg-white/10
+
+        /* 💻 Laptop */
+        md:w-11 md:h-11 md:bg-white/10
+
+        /* 🖥️ Large Desktop */
+        lg:w-12 lg:h-12 lg:bg-white/10
+      "
     >
-      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-        {SocialIcons[icon]}
-      </svg>
-    </div>
+      <item.icon
+        className="
+          /* 📱 Mobile icon size */
+          w-5 h-5
+
+          /* 💻 Laptop */
+          md:w-6 md:h-6
+
+          /* 🖥️ Large Desktop */
+          lg:w-7 lg:h-7
+        "
+        strokeWidth={1.5}
+      />
+    </a>
   ))}
 </div>
+
+
+
 
 
 
