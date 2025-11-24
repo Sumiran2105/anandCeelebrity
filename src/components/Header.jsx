@@ -84,7 +84,7 @@ const Header = () => {
             <Link
               to="/book-vip"
               className="
-                px-7 py-3 rounded-xl bg-orange-500 text-white font-semibold 
+                px-7 py-3 rounded-xl bg-blue-500 text-white font-semibold 
                 shadow-md hover:shadow-lg transition-all hover:bg-orange-600 
                 hover:scale-105 flex items-center space-x-2
               "

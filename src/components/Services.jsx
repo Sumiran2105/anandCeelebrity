@@ -10,15 +10,13 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-19 bg-white">
       <div className="container mx-auto px-4">
 
         {/* Title */}
-        <h3 className="text-3xl md:text-4xl font-extrabold text-center 
-          bg-gradient-to-r from-blue-700 via-indigo-500 to-orange-500 
-          bg-clip-text text-transparent drop-shadow-lg">
-          Our Premium Services
-        </h3>
+        <h3 className="text-3xl md:text-4xl font-extrabold text-center text-blue-800 drop-shadow-lg">
+  Our Premium Services
+</h3>
 
         <p className="text-center text-gray-600 mt-3 max-w-2xl mx-auto text-lg">
           Exclusive end-to-end service crafted for celebrities and elite clients.

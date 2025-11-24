@@ -11,9 +11,7 @@ export default function About() {
 
         {/* Title */}
         <h1
-          className="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r 
-          from-blue-700 via-indigo-500 to-orange-500 bg-clip-text text-transparent 
-          drop-shadow-lg text-center w-full"
+          className="text-3xl md:text-4xl font-extrabold text-center text-blue-900"
         >
           Anand Celebrity Service
         </h1>
@@ -29,33 +27,39 @@ export default function About() {
             />
           </div>
 
-          {/* Description */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center space-y-6">
 
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Anand Celebrity Service is India’s premier luxury movement brand,
-              designed exclusively for celebrities, influencers, public figures and
-              high-profile professionals who demand <span className="font-semibold text-blue-700">precision, privacy, and world-class comfort</span>.
-            </p>
+  <p className="text-[1.15rem] text-gray-800 leading-relaxed bg-white/80 p-4 rounded-lg border-l-4 border-blue-700 shadow-sm">
+    Anand Celebrity Service stands as India’s most trusted and distinguished
+    luxury movement brand — built exclusively for celebrities, influencers,
+    public personalities, and high-profile professionals who expect nothing
+    less than <span className="font-semibold text-blue-700">precision, privacy, and five-star comfort</span>.
+  </p>
 
-            <p className="mt-5 text-gray-700 text-lg leading-relaxed">
-              Whether it’s film shootings, city events, brand tours, spiritual travels, or
-              inter-state VIP movement, our team ensures <span className="font-semibold text-orange-600">complete safety, seamless coordination,
-              and absolute discretion.</span>
-            </p>
+  <p className="text-[1.15rem] text-gray-700 leading-relaxed bg-white/70 p-4 rounded-lg border-l-4 border-orange-500 shadow-sm">
+    From film shoots to nationwide tours and spiritual retreats, every movement is
+    handled with <span className="font-semibold text-orange-600">elite-level security, seamless coordination,
+    and complete confidentiality</span>.
+  </p>
 
-            <p className="mt-5 text-gray-700 text-lg leading-relaxed">
-              Our approach is simple yet powerful —
-              exceptional vehicles, elite personnel, and premium stays,
-              all arranged with flawless backend support so you can focus on your work.
-            </p>
+  <p className="text-[1.15rem] text-gray-700 leading-relaxed bg-white/70 p-4 rounded-lg shadow-sm rounded-lg">
+    Each assignment is supported by a trained backend network — expert chauffeurs,
+    luxury fleet partners, operations managers, and premium stay tie-ups —
+    ensuring unmatched professionalism.
+  </p>
 
-            <p className="mt-6 text-gray-800 font-semibold text-xl bg-blue-50 p-4 rounded-xl shadow-md border-l-4 border-blue-500">
-              “For every journey, we deliver safety, comfort, and celebrity-level convenience — 
-              without compromise.”
-            </p>
+  <p className="text-[1.15rem] text-gray-700 leading-relaxed bg-white/70 p-4 rounded-lg shadow-sm">
+    Whether it's discreet event movement or multi-city VIP routes, we operate with one
+    principle: <span className="font-semibold text-blue-700">your comfort and privacy come first</span>.
+  </p>
 
-          </div>
+  <p className="text-gray-900 font-semibold text-xl bg-gradient-to-r from-blue-50 to-blue-100 p-5 rounded-xl shadow-lg border-l-4 border-blue-700 italic">
+    “Every journey we manage is crafted to deliver unmatched safety, luxurious ease,
+    and true VIP treatment.”
+  </p>
+
+</div>
+
         </div>
       </section>
 
@@ -63,9 +67,7 @@ export default function About() {
           2. WHY CHOOSE CELEBRITY SERVICE
       ========================== */}
       <section className="bg-gray-50 py-20 px-6">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r 
-          from-blue-700 via-indigo-500 to-orange-500 bg-clip-text text-transparent 
-          drop-shadow-lg text-center w-full">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-center text-blue-900">
           Why Choose Anand Celebrity Service?
         </h2>
 
@@ -143,9 +145,7 @@ export default function About() {
            3. OUR COMMITMENT
       ========================== */}
       <section className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r 
-          from-blue-700 via-indigo-500 to-orange-500 bg-clip-text text-transparent 
-          drop-shadow-lg text-center w-full">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-center text-blue-900">
           Our Commitment
         </h2>
 

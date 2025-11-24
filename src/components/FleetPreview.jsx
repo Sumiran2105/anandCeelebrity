@@ -31,11 +31,9 @@ export default function FleetPreview() {
       <div className="container mx-auto px-4">
 
         {/* Title */}
-        <h2 className="text-center text-3xl md:text-4xl font-extrabold 
-          bg-gradient-to-r from-blue-700 via-indigo-500 to-orange-500
-          bg-clip-text text-transparent">
+        <h3 className="text-3xl md:text-4xl font-extrabold text-center text-blue-800 drop-shadow-lg">
           Premium Fleet & Services Preview
-        </h2>
+        </h3>
 
         <p className="text-center text-gray-600 mt-3 max-w-2xl mx-auto text-lg">
           A glimpse into our luxury cars, premium hotels, security staff, and elite chauffeurs.

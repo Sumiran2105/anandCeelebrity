@@ -31,17 +31,15 @@ export default function Timeline() {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-19 bg-white">
       <div className="container mx-auto px-4">
 
         {/* Heading */}
-        <h2
-          className="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r 
-          from-blue-700 via-indigo-500 to-orange-500 bg-clip-text text-transparent 
-          drop-shadow-lg text-center w-full">
+        <h3
+          className="text-3xl md:text-4xl font-extrabold text-center text-blue-800 drop-shadow-lg">
         
           VIP Service Timeline
-        </h2>
+        </h3>
 
         <p className="text-center text-gray-600 mt-3 max-w-2xl mx-auto">
           A futuristic glassmorphic workflow designed for high-profile clients.

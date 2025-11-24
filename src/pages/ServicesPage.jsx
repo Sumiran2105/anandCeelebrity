@@ -123,9 +123,7 @@ export default function Services() {
         {/* SECTION TITLE */}
         {/* ============================ */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r 
-          from-blue-700 via-indigo-500 to-orange-500 bg-clip-text text-transparent 
-          drop-shadow-lg text-center w-full">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-center text-blue-900">
             Our Premium Services
           </h2>
           <p className="mt-3 text-gray-600 max-w-2xl mx-auto text-lg">

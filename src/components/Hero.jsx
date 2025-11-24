@@ -11,15 +11,15 @@ export default function Hero() {
 
           {/* LEFT TEXT */}
           <div className="space-y-6">
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight"
-            >
-              Seamless, Secure & Private  
-              <span className="text-orange-500"> Celebrity Movement</span>
-            </motion.h1>
+           <motion.h1
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-blue-900"
+>
+  Seamless, Secure & Private  
+  <span className="text-yellow-500"> Celebrity Movement</span>
+</motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 10 }}
@@ -41,7 +41,7 @@ export default function Hero() {
               {/* Book VIP */}
               <Link
                 to="/book-vip"
-                className="px-7 py-3 rounded-xl bg-orange-500 text-white font-semibold 
+                className="px-7 py-3 rounded-xl bg-blue-500 text-white font-semibold 
                 shadow-md hover:shadow-lg transition-all hover:bg-orange-600 hover:scale-105"
               >
                 Book VIP Movement

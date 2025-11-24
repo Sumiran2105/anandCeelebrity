@@ -17,9 +17,7 @@ export default function Contact() {
         {/* ---------- TITLE ---------- */}
         <div className="text-center mb-10">
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl font-extrabold 
-            bg-gradient-to-r from-blue-800 via-indigo-600 to-orange-500 
-            bg-clip-text text-transparent drop-shadow-xl"
+            className="text-3xl md:text-4xl font-extrabold text-center text-blue-900"
           >
             Connect With Our VIP Coordination Desk
           </h1>

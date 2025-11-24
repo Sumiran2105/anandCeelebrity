@@ -56,9 +56,7 @@ export default function Fleet() {
 
       {/* PAGE TITLE */}
       <div className="text-center mb-16">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r 
-          from-blue-700 via-indigo-500 to-orange-500 bg-clip-text text-transparent 
-          drop-shadow-lg text-center w-full">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-center text-blue-900">
           Our Premium Fleet Services
         </h2>
         <p className="text-gray-600 mt-3 max-w-2xl mx-auto text-lg">
