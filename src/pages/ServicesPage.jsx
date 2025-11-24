@@ -219,7 +219,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="bg-white py-20 md:py-24">
+    <section className="bg-white py-18 md:py-20">
       <div className="container mx-auto px-4">
 
         {/* TITLE */}
