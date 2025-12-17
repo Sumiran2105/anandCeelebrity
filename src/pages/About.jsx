@@ -1,4 +1,12 @@
 import React from "react";
+import {
+  FaCarSide,
+  FaShieldAlt,
+  FaHotel,
+  FaSatelliteDish,
+  FaLock,
+  FaClock,
+} from "react-icons/fa";
 
 export default function About() {
   return (
@@ -61,7 +69,7 @@ export default function About() {
               Anand Celebrity Service stands as India’s most trusted and distinguished
               luxury movement brand,built exclusively for celebrities, influencers,
               public personalities, and high-profile professionals who expect nothing
-              less than <span className="font-semibold text-blue-700">precision, privacy, and five-star comfort</span>.
+              less than <span className="font-semibold text-blue-700">precision, privacy, and luxury comfort</span>.
             </p>
 
             <p className="text-[1.15rem] text-gray-700 leading-relaxed bg-white/70 p-4 rounded-lg border-l-4 border-orange-500 shadow-sm">
@@ -105,67 +113,80 @@ export default function About() {
 
         <div className="max-w-7xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-10 mt-14">
 
-          {/* Card 1 */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue-500 
-            transition-all duration-300 hover:-translate-y-2 hover:shadow-blue-200 hover:shadow-xl">
-            <div className="text-blue-600 text-4xl mb-3">🚘</div>
-            <h3 className="text-xl font-semibold text-blue-700">Secure Luxury Cars</h3>
-            <p className="mt-3 text-gray-600">
-              Chauffeur-driven premium sedans, SUVs & vans for smooth, private movement.
-            </p>
-          </div>
+  {/* Card 1 */}
+  <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue-500 
+    transition-all duration-300 hover:-translate-y-2 hover:shadow-blue-200 hover:shadow-xl">
+    <div className="text-blue-600 text-4xl mb-3">
+      <FaCarSide />
+    </div>
+    <h3 className="text-xl font-semibold text-blue-700">Secure Luxury Cars</h3>
+    <p className="mt-3 text-gray-600">
+      Chauffeur-driven premium sedans, SUVs & vans for smooth, private movement.
+    </p>
+  </div>
 
-          {/* Card 2 */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-yellow-500
-            transition-all duration-300 hover:-translate-y-2 hover:shadow-yellow-200 hover:shadow-xl">
-            <div className="text-yellow-500 text-4xl mb-3">🛡️</div>
-            <h3 className="text-xl font-semibold text-yellow-600">Elite Security Personnel</h3>
-            <p className="mt-3 text-gray-600">
-              Gunmen, bouncers, and PSOs trained for VIP protocol and discreet operations.
-            </p>
-          </div>
+  {/* Card 2 */}
+  <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-yellow-500
+    transition-all duration-300 hover:-translate-y-2 hover:shadow-yellow-200 hover:shadow-xl">
+    <div className="text-yellow-500 text-4xl mb-3">
+      <FaShieldAlt />
+    </div>
+    <h3 className="text-xl font-semibold text-yellow-600">Elite Security Personnel</h3>
+    <p className="mt-3 text-gray-600">
+      Gunmen, bouncers, and PSOs trained for VIP protocol and discreet operations.
+    </p>
+  </div>
 
-          {/* Card 3 */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-red-500
-            transition-all duration-300 hover:-translate-y-2 hover:shadow-red-200 hover:shadow-xl">
-            <div className="text-red-600 text-4xl mb-3">🏨</div>
-            <h3 className="text-xl font-semibold text-red-600">Premium Hotel Arrangements</h3>
-            <p className="mt-3 text-gray-600">
-              5-star, discreet, and fully managed stays for comfort and privacy.
-            </p>
-          </div>
+  {/* Card 3 */}
+  <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-red-500
+    transition-all duration-300 hover:-translate-y-2 hover:shadow-red-200 hover:shadow-xl">
+    <div className="text-red-600 text-4xl mb-3">
+      <FaHotel />
+    </div>
+    <h3 className="text-xl font-semibold text-red-600">Premium Hotel Arrangements</h3>
+    <p className="mt-3 text-gray-600">
+      5-star, discreet, and fully managed stays for comfort and privacy.
+    </p>
+  </div>
 
-          {/* Card 4 */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-purple-500
-            transition-all duration-300 hover:-translate-y-2 hover:shadow-purple-200 hover:shadow-xl">
-            <div className="text-purple-600 text-4xl mb-3">🛰️</div>
-            <h3 className="text-xl font-semibold text-purple-600">Backend Logistics</h3>
-            <p className="mt-3 text-gray-600">
-              Route planning, scheduling, and on-ground support handled end-to-end.
-            </p>
-          </div>
+  {/* Card 4 */}
+  <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-purple-500
+    transition-all duration-300 hover:-translate-y-2 hover:shadow-purple-200 hover:shadow-xl">
+    <div className="text-purple-600 text-4xl mb-3">
+      <FaSatelliteDish />
+    </div>
+    <h3 className="text-xl font-semibold text-purple-600">Backend Logistics</h3>
+    <p className="mt-3 text-gray-600">
+      Route planning, scheduling, and on-ground support handled end-to-end.
+    </p>
+  </div>
 
-          {/* Card 5 */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-orange-500
-            transition-all duration-300 hover:-translate-y-2 hover:shadow-orange-200 hover:shadow-xl">
-            <div className="text-orange-600 text-4xl mb-3">🔒</div>
-            <h3 className="text-xl font-semibold text-orange-600">Complete Privacy</h3>
-            <p className="mt-3 text-gray-600">
-              We ensure confidentiality, minimal exposure, and secure identity handling.
-            </p>
-          </div>
+  {/* Card 5 */}
+  <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-orange-500
+    transition-all duration-300 hover:-translate-y-2 hover:shadow-orange-200 hover:shadow-xl">
+    <div className="text-orange-600 text-4xl mb-3">
+      <FaLock />
+    </div>
+    <h3 className="text-xl font-semibold text-orange-600">Complete Privacy</h3>
+    <p className="mt-3 text-gray-600">
+      We ensure confidentiality, minimal exposure, and secure identity handling.
+    </p>
+  </div>
 
-          {/* Card 6 */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-green-500
-            transition-all duration-300 hover:-translate-y-2 hover:shadow-green-200 hover:shadow-xl">
-            <div className="text-green-600 text-4xl mb-3">⏱️</div>
-            <h3 className="text-xl font-semibold text-green-600">On-Time Coordination</h3>
-            <p className="mt-3 text-gray-600">
-              Every movement is planned with precision for exceptional punctuality.
-            </p>
-          </div>
+  {/* Card 6 */}
+  <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-green-500
+    transition-all duration-300 hover:-translate-y-2 hover:shadow-green-200 hover:shadow-xl">
+    <div className="text-green-600 text-4xl mb-3">
+      <FaClock />
+    </div>
+    <h3 className="text-xl font-semibold text-green-600">On Time Coordination</h3>
+    <p className="mt-3 text-gray-600">
+      Every movement is planned with precision for exceptional punctuality.
+    </p>
+  </div>
 
-        </div>
+</div>
+
       </section>
 
 
@@ -179,8 +200,8 @@ export default function About() {
 
         <p className="mt-6 text-gray-700 text-lg leading-relaxed text-center max-w-4xl mx-auto">
           At Anand Celebrity Service, we stand for safety, privacy, and comfort. 
-          Our team handles every detail — from vehicles and hotel bookings 
-          to high-priority security support — ensuring a flawless VIP experience.
+          Our team handles every detail from vehicles and hotel bookings 
+          to high-priority security support ensuring a flawless VIP experience.
         </p>
 
         <p className="mt-4 text-gray-700 text-lg leading-relaxed text-center max-w-4xl mx-auto">
@@ -222,7 +243,7 @@ export default function About() {
 
           {/* Card 6 */}
           <div className="bg-white p-6 shadow-md rounded-xl border-l-4 border-orange-500 transition-all duration-300 hover:shadow-orange-300 hover:-translate-y-2">
-            <h4 className="text-xl font-semibold text-orange-600">Client-First Approach</h4>
+            <h4 className="text-xl font-semibold text-orange-600">Client First Approach</h4>
             <p className="mt-2 text-gray-600">Your comfort and security come above all.</p>
           </div>
 
