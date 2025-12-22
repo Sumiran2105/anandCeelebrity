@@ -115,7 +115,7 @@ export default function Contact() {
               <Mail className="w-12 h-12 text-blue-800 p-3 bg-blue-100 rounded-full" />
               <div>
                 <h3 className="text-xl font-bold text-blue-900">Email Support</h3>
-                <p className="text-gray-700 mt-1 text-lg">support@anandvipservice.com</p>
+                <p className="text-gray-700 mt-1 text-lg">info@anandgroup.org</p>
               </div>
             </div>
 

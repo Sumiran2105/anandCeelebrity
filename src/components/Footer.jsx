@@ -36,121 +36,119 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-blue-900 text-white">
-        <div className="max-w-7xl mx-auto px-6">
+      <footer className="bg-gradient-to-b from-blue-900 to-[#081526] text-white">
+  <div className="max-w-7xl mx-auto px-6">
 
-          {/* GRID */}
-          <div className="py-12 grid grid-cols-1 md:grid-cols-12 gap-10">
+    {/* TOP */}
+    <div className="py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
 
-            {/* BRAND */}
-            <div className="md:col-span-4">
-              <div className="flex items-center space-x-3">
-                <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-yellow-300">
-                  <img
-                    src="/data/assets/founder.jpg"
-                    className="w-full h-full object-cover"
-                    alt="Founder"
-                  />
-                </div>
+      {/* BRAND */}
+      <div>
+        <div className="flex items-center gap-3 mb-4">
 
-                <img
-                  src="/data/assets/Anandhlogo.png"
-                  className="w-14 h-14"
-                  alt="Logo"
-                />
-              </div>
-
-              <h2 className="text-2xl font-bold mt-3">
-                <span className="text-yellow-400">ANAND</span> CELEBRITY SERVICE
-              </h2>
-
-              <p className="text-yellow-200 text-sm italic">
-                "Seamless • Secure • Private Movement"
-              </p> 
-              <p className="text-white text-sm">
-                Anand Celebrity Service provides secure, discreet travel support for celebrities and high-profile professionals, managing luxury mobility, personal security, and coordination with precision,so clients move effortlessly and confidently.
-              </p>
-            </div>
-
-            {/* QUICK LINKS */}
-            <div className="md:col-span-3">
-              <h3 className="text-lg font-semibold mb-4 text-yellow-400">
-                Quick Links
-              </h3>
-
-              <ul className="space-y-3 text-gray-200 text-sm">
-                {quickLinks.map((link) => (
-                  <li key={link.label}>
-                    <Link className="hover:text-yellow-400" to={link.path}>
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* CONTACT */}
-            <div className="md:col-span-3">
-              <h3 className="text-lg font-semibold mb-4 text-yellow-400">
-                Contact
-              </h3>
-
-              <p className="text-gray-300 text-sm">
-                📍 Jubilee Hills, Hyderabad <br /> Telangana - 500033
-              </p>
-              <p className="text-gray-300 text-sm mt-2">📞 +91 98765 43210</p>
-              <p className="text-gray-300 text-sm">
-                📧 support@anandcelebrityservice.com
-              </p>
-            </div>
-
-            {/* SOCIAL ICONS */}
-            <div className="md:col-span-2 flex md:justify-end">
-              <div className="flex gap-4">
-                {[ 
-                  { icon: <Instagram className="w-6 h-6" />, link: "#" },
-                  { icon: <Facebook className="w-6 h-6" />, link: "#" },
-                  { icon: <Twitter className="w-6 h-6" />, link: "#" },
-                  { icon: <Youtube className="w-6 h-6" />, link: "#" },
-                ].map((social, i) => (
-                  <a
-                    key={i}
-                    href={social.link}
-                    className="
-                      w-12 h-12 flex items-center justify-center
-                      rounded-xl bg-white/10 border border-white/20
-                      backdrop-blur text-white
-                      hover:bg-yellow-400 hover:text-black
-                      hover:shadow-[0_4px_15px_rgba(255,255,0,0.4)]
-                      transition-all duration-300
-                    "
-                  >
-                    {social.icon}
-                  </a>
-                ))}
-              </div>
-            </div>
+          {/* LOGO */}
+          <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm">
+            <img
+              src="/data/assets/logo.jpeg"
+              alt="Anand Celebrity Service"
+              className="w-7 h-7 object-contain"
+            />
           </div>
 
-          {/* COPYRIGHT */}
-          <div className="border-t border-white/10 py-4 flex flex-col md:flex-row justify-between text-sm text-gray-300">
-            <p>© {currentYear} Anand Celebrity Service — All Rights Reserved.</p>
-
-            <div className="flex gap-6 mt-2 md:mt-0">
-              {["Privacy", "Terms", "Disclaimer"].map((item) => (
-                <button
-                  key={item}
-                  className="hover:text-yellow-400"
-                  onClick={() => setActiveModal(item)}
-                >
-                  {item}
-                </button>
-              ))}
-            </div>
+          <div>
+            <h2 className="text-xl font-bold tracking-wide">
+              <span className="text-orange-400">ANAND </span>CELEBRITY SERVICE
+            </h2>
+            <p className="text-xs text-gray-400 italic mt-1">
+              “Seamless • Secure • Private Movement”
+            </p>
           </div>
-
         </div>
-      </footer>
+
+        <p className="text-gray-300 text-sm leading-relaxed">
+          Anand Celebrity Service delivers discreet, luxury travel and security
+          solutions for celebrities and high-profile professionals across India, ensuring
+          effortless, confident movement with absolute privacy.
+        </p>
+
+        {/* SOCIAL */}
+        <div className="flex gap-3 mt-4">
+          {[Instagram, Facebook, Twitter, Youtube].map((Icon, i) => (
+            <a
+              key={i}
+              href="#"
+              className="
+                w-9 h-9 flex items-center justify-center
+                rounded-lg bg-white/10
+                hover:bg-orange-400 hover:text-black
+                transition
+              "
+            >
+              <Icon className="w-4 h-4" />
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {/* QUICK LINKS */}
+      <div className="md:pl-20">
+        <h3 className="text-lg font-semibold text-orange-400 mb-4">
+          Quick Links
+        </h3>
+
+        <nav className="space-y-2">
+          {quickLinks.map((link) => (
+            <Link
+              key={link.label}
+              to={link.path}
+              className="block text-gray-300 text-sm hover:text-orange-400 transition"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+      </div>
+
+      {/* CONTACT */}
+      <div>
+        <h3 className="text-lg font-semibold text-orange-400 mb-4">
+          Contact
+        </h3>
+
+        <p className="text-gray-300 text-sm leading-relaxed">
+          Jubilee Hills, Hyderabad <br />
+          Telangana – 500033
+        </p>
+
+        <p className="text-gray-300 text-sm mt-2">
+          📞 +91 98765 43210
+        </p>
+        <p className="text-gray-300 text-sm">
+          📧 info@anandgroup.org
+        </p>
+      </div>
+    </div>
+
+    {/* BOTTOM */}
+    <div className="border-t border-white/10 py-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-2">
+      <p>© {currentYear} Anand Celebrity Service. All rights reserved.</p>
+
+      <div className="flex gap-4">
+        {["Privacy", "Terms", "Disclaimer"].map((item) => (
+          <button
+            key={item}
+            onClick={() => setActiveModal(item)}
+            className="hover:text-orange-400 transition"
+          >
+            {item}
+          </button>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</footer>
+
 
       {/* LEGAL MODAL */}
       {activeModal && (

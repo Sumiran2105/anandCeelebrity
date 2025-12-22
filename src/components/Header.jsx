@@ -47,7 +47,7 @@ const Header = () => {
             <div className="flex flex-col items-start">
               <div className="flex items-center space-x-2">
                 <img
-                  src="data/assets/Anandhlogo.png"
+                  src="data/assets/logo.jpeg"
                   alt="Anand Logo"
                   className="w-8 h-10 md:w-10 md:h-12 object-contain"
                 />
